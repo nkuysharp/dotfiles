@@ -1,0 +1,33 @@
+"3.5 (created: 2012/08/04 00:41:20)
+
+map J gT
+map K gt
+
+set hintchars=hjklasdfgyuiopqwertnmzxcvb
+set autocomplete
+set wildmode=list:longest,full
+bmark -keyword=cpp http://www.cplusplus.com/search.do?q=%s
+bmark -keyword=dict http://dict.youdao.com/search?q=%s
+
+" type 't cpp <keyword>' to search for keyword in cplusplus.com
+" type 't dict <keyword>' to search for keyword in dict.youdao.com
+
+
+source /Users/Ysharp/.vimperator/vimperator-plugins/_smooziee_new.js
+
+" auto hide the toolbars
+source /Users/Ysharp/.vimperator/vimperator-plugins/autohidetoolbar.js
+autohidetb
+
+nnoremap xdl :tabopen chrome://browser/content/downloads/contentAreaDownloadsView.xul<Return> 
+
+"" dict search settings
+source /Users/Ysharp/.vimperator/vimperator-plugins/idict.js
+nnoremap xd :idict<Space>
+nnoremap xxd :hidedict<Return>
+source /Users/Ysharp/.vimperator/vimperator-plugins/rename_title.js
+
+map xb :bmarks!<Space>-tags=
+
+set focuscontent=true
+" vim: set ft=vimperator:
